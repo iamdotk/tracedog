@@ -7,7 +7,14 @@ Bring your own model: Anthropic, OpenAI, OpenRouter, DeepSeek, xAI (Grok), Z.ai 
 ## Install
 
 ```bash
-git clone <this repo>
+npm install -g @iamdotk/tracedog-cli
+tracedog setup
+```
+
+### From source
+
+```bash
+git clone https://github.com/iamdotk/tracedog.git
 cd tracedog
 pnpm install
 pnpm build

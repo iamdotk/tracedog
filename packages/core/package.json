@@ -12,6 +12,14 @@
     }
   },
   "files": ["dist", "README.md"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamdotk/tracedog.git"
+  },
+  "homepage": "https://github.com/iamdotk/tracedog#readme",
+  "bugs": "https://github.com/iamdotk/tracedog/issues",
+  "license": "MIT",
+  "keywords": ["datadog", "apm", "cli", "claude", "openai", "agent", "observability", "traces"],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "clean": "rm -rf dist"
