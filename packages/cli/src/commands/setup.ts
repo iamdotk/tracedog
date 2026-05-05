@@ -88,7 +88,7 @@ export async function runSetup(): Promise<void> {
     ai = {
       activeProvider: providerChoice,
       providers: {
-        ...(existing?.ai?.providers ?? {}),
+        ...existing?.ai?.providers,
         [providerChoice]: entry,
       },
     };

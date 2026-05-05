@@ -100,7 +100,7 @@ async function setProvider(value: string | undefined): Promise<void> {
     ai: {
       activeProvider: provider,
       providers: {
-        ...(creds.ai?.providers ?? {}),
+        ...creds.ai?.providers,
         [provider]: entry,
       },
     },

@@ -276,7 +276,7 @@ function getTraceTool(dd: DatadogClient): GenericTool {
           durationMs: round(trace.durationMs),
           spanCount: trace.spanCount,
           errorCount: trace.errorCount,
-          tree: formatTraceTree(trace).replace(/\x1b\[[0-9;]*m/g, ""),
+          tree: formatTraceTree(trace).replace(ANSI_ESCAPE_RE, ""),
         },
         null,
         2,
@@ -289,3 +289,7 @@ function round(n: number | undefined): number | undefined {
   if (n === undefined) return undefined;
   return Math.round(n * 100) / 100;
 }
+
+// ANSI escape sequence stripper. The control char (0x1B) is intentional.
+// eslint-disable-next-line no-control-regex
+const ANSI_ESCAPE_RE = /\x1B\[[0-9;]*m/g;
