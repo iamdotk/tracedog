@@ -9,8 +9,8 @@ An **AI agent in the terminal** that helps developers investigate Datadog APM da
 ## Workspace layout
 
 - pnpm monorepo, two packages:
-  - `@tracedog/core` (`packages/core`) — pure library. Datadog client, agent, tool definitions, credential storage, formatters. **No CLI deps. No `process.argv`/`process.exit`. No interactive prompts.**
-  - `@tracedog/cli` (`packages/cli`) — terminal UX. Interactive prompts, command routing, output. Depends on core.
+  - `@iamdotk/tracedog-core` (`packages/core`) — pure library. Datadog client, agent, tool definitions, credential storage, formatters. **No CLI deps. No `process.argv`/`process.exit`. No interactive prompts.**
+  - `@iamdotk/tracedog-cli` (`packages/cli`) — terminal UX. Interactive prompts, command routing, output. Depends on core.
 - Lockstep versioning: bump both packages together. Publish order: core first, then cli.
 
 ## Build, test, run

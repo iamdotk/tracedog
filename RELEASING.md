@@ -1,6 +1,6 @@
 # Releasing tracedog
 
-Lockstep versioning: `@tracedog/core` and `@tracedog/cli` always ship at the same version.
+Lockstep versioning: `@iamdotk/tracedog-core` and `@iamdotk/tracedog-cli` always ship at the same version.
 
 ## Steps
 
@@ -11,8 +11,8 @@ Lockstep versioning: `@tracedog/core` and `@tracedog/cli` always ship at the sam
 5. Tag: `git tag vX.Y.Z`
 6. Publish (core first, then cli):
    ```bash
-   pnpm --filter @tracedog/core publish --access public
-   pnpm --filter @tracedog/cli  publish --access public
+   pnpm --filter @iamdotk/tracedog-core publish --access public
+   pnpm --filter @iamdotk/tracedog-cli  publish --access public
    ```
 7. Push: `git push && git push --tags`
 

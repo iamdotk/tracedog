@@ -25,5 +25,5 @@ All notable changes to this project will be documented here. Format: [Keep a Cha
 - Bumped `@anthropic-ai/sdk` to ^0.94 and `zod` to ^4 (required for `betaZodTool` + adaptive thinking on Opus 4.7).
 
 ### Initial scaffold
-- `@tracedog/core` (Datadog client, formatters, types) and `@tracedog/cli` (`list`, `show`, `watch`).
+- `@iamdotk/tracedog-core` (Datadog client, formatters, types) and `@iamdotk/tracedog-cli` (`list`, `show`, `watch`).
 - pnpm workspace, vitest, oxlint, AGENTS.md, CLAUDE.md.

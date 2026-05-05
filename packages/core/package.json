@@ -1,5 +1,5 @@
 {
-  "name": "@tracedog/core",
+  "name": "@iamdotk/tracedog-core",
   "version": "0.1.0",
   "description": "Datadog traces client + formatters. Pure library, no CLI deps.",
   "type": "module",

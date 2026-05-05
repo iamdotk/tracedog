@@ -8,8 +8,8 @@ cd "$(dirname "$0")/.."
 VERSION=$(node -p "require('./package.json').version")
 echo "Publishing version $VERSION (core first, then cli)…"
 
-pnpm --filter @tracedog/core publish --access public --no-git-checks
-pnpm --filter @tracedog/cli  publish --access public --no-git-checks
+pnpm --filter @iamdotk/tracedog-core publish --access public --no-git-checks
+pnpm --filter @iamdotk/tracedog-cli  publish --access public --no-git-checks
 
-echo "✓ published @tracedog/core@$VERSION and @tracedog/cli@$VERSION"
+echo "✓ published @iamdotk/tracedog-core@$VERSION and @iamdotk/tracedog-cli@$VERSION"
 echo "Don't forget: git tag v$VERSION && git push --tags"
