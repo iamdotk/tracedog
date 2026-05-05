@@ -1,0 +1,22 @@
+{
+  "name": "@tracedog/cli",
+  "version": "0.1.0",
+  "description": "Track Datadog traces from your terminal.",
+  "type": "module",
+  "bin": {
+    "tracedog": "./dist/bin/tracedog.js"
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "node --import tsx ./bin/tracedog.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@tracedog/core": "workspace:*",
+    "@inquirer/prompts": "^7.2.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
+  }
+}

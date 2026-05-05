@@ -1,0 +1,27 @@
+{
+  "name": "tracedog-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Track Datadog traces from your terminal.",
+  "packageManager": "pnpm@9.12.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "pnpm -r --filter './packages/*' build",
+    "dev": "pnpm --filter @tracedog/cli dev",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "oxlint",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "check": "pnpm format:check && pnpm lint && pnpm build && pnpm test",
+    "release": "./Scripts/release.sh"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "oxlint": "^0.15.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}
