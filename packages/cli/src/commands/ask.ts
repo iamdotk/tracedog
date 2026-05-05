@@ -1,4 +1,4 @@
-import { activeAIConfig, Agent, loadOrEnv, type Provider } from "@tracedog/core";
+import { activeAIConfig, Agent, loadOrEnv, type Provider } from "@iamdotk/tracedog-core";
 
 export interface AskOptions {
   question: string;

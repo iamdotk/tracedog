@@ -1,5 +1,5 @@
 {
-  "name": "@tracedog/cli",
+  "name": "@iamdotk/tracedog-cli",
   "version": "0.1.0",
   "description": "Track Datadog traces from your terminal.",
   "type": "module",
@@ -13,7 +13,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@tracedog/core": "workspace:*",
+    "@iamdotk/tracedog-core": "workspace:*",
     "@inquirer/prompts": "^7.2.0"
   },
   "devDependencies": {

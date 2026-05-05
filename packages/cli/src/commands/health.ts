@@ -1,4 +1,4 @@
-import { DatadogClient, loadOrEnv } from "@tracedog/core";
+import { DatadogClient, loadOrEnv } from "@iamdotk/tracedog-core";
 import { ms, table } from "../table.js";
 
 export interface HealthOptions {

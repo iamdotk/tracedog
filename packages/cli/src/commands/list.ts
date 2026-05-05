@@ -1,4 +1,4 @@
-import { DatadogClient, formatSpanLine } from "@tracedog/core";
+import { DatadogClient, formatSpanLine } from "@iamdotk/tracedog-core";
 import { loadCredentials } from "../config.js";
 
 export interface ListOptions {

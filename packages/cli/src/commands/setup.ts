@@ -10,7 +10,7 @@ import {
   type Provider,
   type StoredAI,
   type StoredProviderEntry,
-} from "@tracedog/core";
+} from "@iamdotk/tracedog-core";
 
 const SITE_CHOICES: { name: string; value: DatadogSite }[] = [
   { name: "datadoghq.com (US1 — default)", value: "datadoghq.com" },

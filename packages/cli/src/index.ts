@@ -1,4 +1,4 @@
-import { isValidProvider, type Provider } from "@tracedog/core";
+import { isValidProvider, type Provider } from "@iamdotk/tracedog-core";
 import { runAsk } from "./commands/ask.js";
 import { runChat } from "./commands/chat.js";
 import { runConfig } from "./commands/config.js";

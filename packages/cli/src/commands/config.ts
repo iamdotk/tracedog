@@ -6,7 +6,7 @@ import {
   PRESETS,
   saveCredentials,
   type Provider,
-} from "@tracedog/core";
+} from "@iamdotk/tracedog-core";
 import { configureProvider, runSetup } from "./setup.js";
 
 export async function runConfig(
